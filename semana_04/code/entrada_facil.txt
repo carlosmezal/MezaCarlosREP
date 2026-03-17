@@ -1,0 +1,101 @@
+sku,nombre,categoria,precio,stock,stock_minimo
+SKU00001,Microfono Epson,Audio,1784.02,1,25
+SKU00002,Ultrabook Lenovo,Electronica,18402.00,17,25
+SKU00003,USB Drive Acer,Almacenamiento,144.43,2,10,inf,N/A
+SKU00004,Teclado TP-Link,Accesorios,1633.46,None,50
+SKU00005,RAM Lenovo,Componentes,2043.38,53,30
+SKU00006,Audifonos Gaming Logitech,Audio,2102.79,43,15
+SKU00007,Teclado Anker,Accesorios,752.58,11,25
+SKU00008,Pantalla Portatil Seagate,Electronica,2202.94,16,15
+SKU00009,Notebook Samsung,Electronica,11720.57,18,50
+SKU00010,HDD Anker,Almacenamiento,603.24,7,15
+SKU00011,Stylus Samsung,Accesorios,821.63,9,5
+SKU00012,Teclado Mecanico Asus,Accesorios,3773.26,67,25
+SKU00013,Mouse Canon,Accesorios,424.16,13,10
+SKU00014,Chromebook Razer,Electronica,11663.48,8,5
+SKU00015,Tarjeta Video Lenovo,Componentes,10152.94,80,30
+SKU00016,Fuente Poder Gigabyte,Componentes,2196.04,18,30
+SKU00017,Barra Sonido Seagate,Audio,3860.97,65,30
+SKU00018,Mouse Gaming Seagate,Accesorios,1360.56,136,50
+SKU00019,Audifonos Kingston,Audio,525.42,59,30
+SKU00020,HDD Xiaomi,Almacenamiento,1674.06,39,20
+SKU00021,Fuente Poder Apple,Componentes,1625.91,20,15
+SKU00022,MacBook Xiaomi,Electronica,24029.79,35,30
+SKU00023,Teclado Mecanico Seagate,Accesorios,4291.81,5,5
+SKU00024,RAM Canon,Componentes,2791.14,45,50
+SKU00025,HDD Externo Xiaomi,Almacenamiento,2652.42,11,5
+SKU00026,HDD Externo WD,Almacenamiento,3462.41,28,15
+SKU00027,Tarjeta Video Gigabyte,Componentes,10783.11,26,20
+SKU00028,Microfono USB Sony,Audio,1330.69,8,12..5
+SKU00029,MacBook Gigabyte,Electronica,19656.22,22,10
+SKU00030,Ultrabook WD,Electronica,12753.45,75,30
+SKU00031,Cable Ethernet,Redes,80.83,17,15
+SKU00032,Touchpad MSI,Accesorios,855.50,10,5
+SKU00033,Tarjeta Video Apple,Componentes,25116.51,18,30
+SKU00034,Ultrabook WD,Electronica,17509.76,45,15
+SKU00035,SSD Externo Sony,Almacenamiento,4039.46,4,5
+SKU00036,HDD HyperX,Almacenamiento,2119.52,43,15
+SKU00037,RAM Asus,Componentes,2103.04,sin_dato,15
+SKU00038,Monitor Gaming Logitech,Electronica,5520.67,7,5
+SKU00039,Audifonos Bluetooth SanDisk,Audio,803.13,120,50
+SKU00040,Pantalla Portatil,Electronica,1632.88,4,5
+SKU00041,Teclado Mecanico Samsung,Accesorios,4429.27,35,15
+SKU00042,Laptop LG,Electronica,25554.47,29,25
+SKU00043,HDD Externo Apple,Almacenamiento,1365.26,66,50
+SKU00044,Laptop Sony,Electronica,16273.92,51,25,sin_dato
+SKU00045,Teclado LG,Accesorios,978.80,3,30
+SKU00046,Fuente Poder Acer,Componentes,2545.56,4,5
+SKU00047,Notebook Xiaomi,Electronica,10580.33,33,30
+SKU00048,MicroSD LG,Almacenamiento,477.92,7,30
+SKU00049,Audifonos WD,Audio,183.19,17,25
+SKU00050,Teclado TP-Link,Accesorios,513.15,21,50
+SKU00051,Touchpad Gigabyte,Accesorios,2201.51,31,20
+SKU00052,Audifonos Razer,Audio,NaN,13,10
+SKU00053,UPS,Energia,3976.41,3,25,NaN,3,500
+SKU00054,Monitor Dell,Electronica,10739.41,1,5
+SKU00055,MicroSD HP,Almacenamiento,822.84,15,20
+SKU00056,Mouse Gaming BenQ,Accesorios,1970.16,59,50
+SKU00057,SSD Lenovo,Almacenamiento,3227.27,90,50
+SKU00058,Fuente Poder Asus,Componentes,1577.81,10,10
+SKU00059,MicroSD,Almacenamiento,236.95,7,10
+SKU00060,MicroSD Asus,Almacenamiento,674.53,11,25
+SKU00061,Pantalla Portatil MSI,Electronica,2958.35,5,25
+SKU00062,MacBook Sony,Electronica,33596.30,64,50
+SKU00063,Audifonos Sony,Audio,383.98,48,25
+SKU00064,MicroSD TP-Link,Almacenamiento,274.25,1,15
+SKU00065,MicroSD Epson,Almacenamiento,724.27,24,10
+SKU00066,HDD Externo Xiaomi,Almacenamiento,2121.50,17,20
+SKU00067,Teclado Gaming Asus,Accesorios,3963.16,112,50,,12..5
+SKU00068,Procesador HP,Componentes,2354.16,29,50
+SKU00069,Microfono Logitech,Audio,2653.81,12,50
+SKU00070,MacBook LG,Electronica,37988.89,15,null
+SKU00071,Mouse Ergonomico HP,Accesorios,1036.93,6,10
+SKU00072,Notebook HP,Electronica,11761.29,9
+SKU00073,Monitor Kingston,Electronica,10119.89,53,30
+SKU00074,Teclado Gaming SanDisk,Accesorios,???,83,30
+SKU00075,Laptop Logitech,Electronica,22545.73,5,10
+SKU00076,Notebook Lenovo,Electronica,16631.65,53,20
+SKU00077,Mouse Ergonomico Kingston,Accesorios,,53,25
+SKU00078,Monitor Canon,Electronica,7217.39,48,25
+SKU00079,Microfono Dell,Audio,1310.20,48,50
+SKU00080,Chromebook Seagate,Electronica,5805.97,15,25
+SKU00081,RAM Razer,Componentes,1493.19,88,30
+SKU00082,USB Drive HyperX,Almacenamiento,93.02,12,15
+SKU00083,RAM,Componentes,2235.56,111,50
+SKU00084,MicroSD HyperX,Almacenamiento,487.73,5,5
+SKU00085,Teclado Gaming Apple,Accesorios,1060.69,38,25
+SKU00086,Notebook Anker,Electronica,12514.70,null,20
+SKU00087,Monitor Epson,Electronica,3949.26,15,25
+SKU00088,Pantalla Portatil Samsung,Electronica,3713.55,5,error
+SKU00089,Microfono USB Dell,Audio,1739.19,86,50
+SKU00090,Mouse Gigabyte,Accesorios,329.40,6,15
+SKU00091,Monitor Sony,Electronica,9149.30,9,50
+SKU00092,SSD Gigabyte,Almacenamiento,3939.45,13,5
+SKU00093,Laptop SanDisk,Electronica,15214.51,14,10
+SKU00094,NAS Asus,Almacenamiento,16746.44,77,50
+SKU00095,Monitor Gaming Razer,Electronica,21659.67,124,50
+SKU00096,MicroSD Anker,Almacenamiento,127.41,5,15
+SKU00097,Notebook WD,Electronica,14288.50,28,muchos
+SKU00098,Monitor Epson,Electronica,5203.22,13,20
+SKU00099,SSD Externo LG,Almacenamiento,1530.98,1,20
+SKU00100,Impresora,Impresion,9948.25,8,5
