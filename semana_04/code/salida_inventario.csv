@@ -1,0 +1,7 @@
+sku,nombre,categoria,stock_actual,stock_minimo,unidades_faltantes,valor_inventario
+SKU48590,MacBook LG,Electronica,3,50,47,106789.20
+SKU31368,NAS SanDisk,Almacenamiento,16,50,34,328124.32
+SKU31371,Teclado WD,Accesorios,7,25,18,8465.24
+SKU31366,SSD Seagate,Almacenamiento,34,50,16,52235.22
+SKU47846,Audifonos SanDisk,Audio,0,10,10,0.00
+SKU48584,Teclado Gaming Apple,Accesorios,0,5,5,0.00
