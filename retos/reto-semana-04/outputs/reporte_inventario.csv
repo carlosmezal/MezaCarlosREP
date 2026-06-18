@@ -1,0 +1,3 @@
+sku,nombre,stock,stock_minimo,faltantes
+SKU001,Laptop HP,5,10,5
+SKU003,Teclado Mecanico,3,8,5

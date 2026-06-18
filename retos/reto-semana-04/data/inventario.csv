@@ -1,0 +1,4 @@
+sku,nombre,categoria,precio,stock,stock_minimo
+SKU001,Laptop HP,Electronica,15000,5,10
+SKU002,Mouse Logitech,Accesorios,350,20,15
+SKU003,Teclado Mecanico,Accesorios,800,3,8
