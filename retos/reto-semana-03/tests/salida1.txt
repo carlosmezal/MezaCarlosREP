@@ -1,0 +1,1 @@
+producto,unidades_vendidas,ingreso_total,precio_promedio
