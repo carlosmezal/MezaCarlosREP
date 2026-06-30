@@ -1,24 +1,4 @@
-"""
-╔══════════════════════════════════════════════════════════════╗
-║  web_scraper.py — Módulo de Web Scraping (tema Pokémon)      ║
-╚══════════════════════════════════════════════════════════════╝
 
-FUENTE: PokéAPI — https://pokeapi.co
-  API REST gratuita, pública y sin autenticación.
-  Devuelve JSON con datos completos de todos los Pokémon.
-
-TECNOLOGÍAS USADAS (ambas requeridas por la materia):
-  requests       : descarga JSON de la API y HTML de la página
-  BeautifulSoup  : parsea la tabla HTML que genera la API
-
-FLUJO:
-  1. requests.get(pokeapi.co/api/v2/pokemon/{id})
-     → Recibe JSON con stats del Pokémon
-  2. Construimos HTML con los datos (tabla <table>)
-  3. BeautifulSoup parsea esa tabla HTML
-  4. Extraemos datos de las celdas → lista de dicts
-  5. pd.DataFrame(lista) → DataFrame final
-"""
 
 import requests
 from bs4 import BeautifulSoup
@@ -29,33 +9,6 @@ class WebScraper:
     """
     Extrae datos de Pokémon usando la PokéAPI y BeautifulSoup.
 
-    ── Cómo funciona la PokéAPI ─────────────────────────────────
-    La PokéAPI es una API REST. Funciona así:
-
-      GET https://pokeapi.co/api/v2/pokemon/25
-      → Responde con JSON:
-        {
-          "id": 25,
-          "name": "pikachu",
-          "base_experience": 112,
-          "stats": [
-            {"base_stat": 35, "stat": {"name": "hp"}},
-            {"base_stat": 55, "stat": {"name": "attack"}},
-            ...
-          ],
-          "types": [
-            {"type": {"name": "electric"}}
-          ]
-        }
-
-    ── Por qué usamos BeautifulSoup si la API devuelve JSON ─────
-    La materia requiere BeautifulSoup. La estrategia:
-    1. Obtener datos JSON de la API con requests
-    2. Convertir esos datos a una tabla HTML en string
-    3. Parsear esa tabla con BeautifulSoup
-    4. Extraer celdas → lista de dicts → DataFrame
-
-    Así demostramos AMBAS tecnologías de forma coherente.
     """
 
     API_URL = "https://pokeapi.co/api/v2/pokemon/{}"
@@ -94,23 +47,7 @@ class WebScraper:
         """
         Consulta la PokéAPI y retorna los datos de un Pokémon.
 
-        Parámetros
-        ----------
-        pokemon_id : int   Número del Pokémon (1 = Bulbasaur, 25 = Pikachu)
 
-        Retorna
-        -------
-        dict con: nombre, id, tipo1, tipo2, hp, ataque, defensa,
-                  sp_ataque, sp_defensa, velocidad, experiencia_base
-
-        ── Cómo funciona el JSON de la PokéAPI ──────────────────
-        response.json() convierte el texto JSON a dict Python.
-
-        stats es una lista de objetos, cada uno con:
-          {"base_stat": 35, "effort": 0, "stat": {"name": "hp"}}
-
-        Iteramos para crear un dict {nombre_stat: valor}:
-          {"hp": 35, "attack": 55, "defense": 40, ...}
         """
         url = self.API_URL.format(pokemon_id)
         response = requests.get(url, headers=self.headers, timeout=15)
@@ -222,16 +159,7 @@ class WebScraper:
         """
         Orquesta todo el proceso: API → HTML → BeautifulSoup → DataFrame.
 
-        Retorna
-        -------
-        pd.DataFrame con columnas:
-            numero, nombre, tipo1, tipo2, hp, ataque, defensa,
-            sp_ataque, sp_defensa, velocidad, exp_base, total_stats
-
-        Excepciones
-        -----------
-        ConnectionError : sin acceso a internet o API no disponible
-        ValueError      : si no se pudieron obtener datos
+       
         """
         self.data = []
         ids_a_consultar = self.POKEMON_IDS[:self.limit]

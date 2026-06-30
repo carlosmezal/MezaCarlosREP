@@ -41,48 +41,15 @@ class DataAnalyzer:
         """
         return {col: str(dtype) for col, dtype in self.df.dtypes.items()}
 
-    # ─────────────────────────────────────────────────────────────── #
-    #  Análisis de valores nulos (NaN)                                 #
-    # ─────────────────────────────────────────────────────────────── #
     def get_null_counts(self) -> dict:
         """
-        Retorna la cantidad de valores nulos (NaN) por columna.
-
-        ── Cómo funciona ────────────────────────────────────────────
-        df.isnull()     → DataFrame booleano: True donde hay NaN
-                          (mismo tamaño que df)
-        .sum()          → suma los True de cada columna
-                          (True=1, False=0)
-        .to_dict()      → convierte Series a dict Python
-
-        Ejemplo:
-          df:
-            nombre  edad
-            "Ana"   21
-            NaN     22    ← NaN en nombre
-            "Luis"  NaN   ← NaN en edad
-
-          df.isnull():
-            nombre  edad
-            False   False
-            True    False
-            False   True
-
-          .sum() → {"nombre": 1, "edad": 1}
-
-        Retorna
-        -------
-        dict : {columna: cantidad_de_nulos}
+        Retorna la cantidad de valores nulos
         """
         return self.df.isnull().sum().to_dict()
 
     def get_null_percentages(self) -> dict:
         """
-        Retorna el porcentaje de valores nulos por columna.
-
-        Retorna
-        -------
-        dict : {columna: porcentaje_nulos_redondeado}
+        Retorna el porcentaje de valores nulos
         """
         total_filas = len(self.df)
         conteos = self.get_null_counts()
@@ -91,55 +58,19 @@ class DataAnalyzer:
             for col, conteo in conteos.items()
         }
 
-    # ─────────────────────────────────────────────────────────────── #
-    #  Estadísticas descriptivas                                       #
-    # ─────────────────────────────────────────────────────────────── #
     def get_descriptive_stats(self) -> str:
         """
-        Retorna las estadísticas descriptivas del DataFrame.
-
-        df.describe() calcula para cada columna numérica:
-          count  → número de valores NO nulos
-          mean   → media aritmética: Σx / n
-          std    → desviación estándar: dispersión de los datos
-          min    → valor mínimo
-          25%    → 1er cuartil: 25% de datos están por debajo
-          50%    → mediana: valor central (divide datos en mitades)
-          75%    → 3er cuartil: 75% de datos están por debajo
-          max    → valor máximo
-
-        include='all' añade columnas de tipo object (texto):
-          count   → valores no nulos
-          unique  → valores únicos
-          top     → valor más frecuente
-          freq    → frecuencia del valor más frecuente
-
-        Retorna
-        -------
-        str : tabla formateada de estadísticas
+        Retorna las estadísticas
         """
         return self.df.describe(include='all').to_string()
 
     def get_numeric_stats(self) -> pd.DataFrame:
-        """
-        Retorna estadísticas solo de columnas numéricas como DataFrame.
-        Útil cuando se quiere el resultado como DataFrame, no como string.
-        """
+        
         return self.df.describe()
 
-    # ─────────────────────────────────────────────────────────────── #
-    #  Resumen completo                                                 #
-    # ─────────────────────────────────────────────────────────────── #
     def get_full_summary(self) -> str:
         """
-        Genera un reporte completo de EDA en formato texto.
-
-        Combina toda la información relevante en un solo reporte
-        formateado, listo para mostrar en la interfaz.
-
-        Retorna
-        -------
-        str : Reporte completo de EDA con secciones claramente delimitadas.
+        Genera el reporte EDA
         """
         shape = self.get_shape()
         dtypes = self.get_dtypes()
@@ -196,15 +127,9 @@ class DataAnalyzer:
 
         return "\n".join(lineas)
 
-    # ─────────────────────────────────────────────────────────────── #
-    #  Métodos adicionales de utilidad                                 #
-    # ─────────────────────────────────────────────────────────────── #
     def get_head(self, n: int = 5) -> pd.DataFrame:
         """
-        Retorna las primeras n filas del DataFrame.
-
-        df.head(n) es el método más usado para previsualizar datos.
-        Por defecto n=5 (las primeras 5 filas).
+        Retorna las primeras n filas
         """
         return self.df.head(n)
 
@@ -212,18 +137,6 @@ class DataAnalyzer:
         """
         Retorna la frecuencia de cada valor único en una columna.
 
-        Muy útil para columnas categóricas (carrera, estado, etc.)
-
-        df[col].value_counts() cuenta cuántas veces aparece cada valor
-        y los ordena de mayor a menor frecuencia.
-
-        Parámetros
-        ----------
-        column : str   Nombre de la columna a analizar.
-
-        Retorna
-        -------
-        pd.Series : índice = valores únicos, datos = frecuencias
         """
         if column not in self.df.columns:
             raise ValueError(
@@ -236,13 +149,6 @@ class DataAnalyzer:
         """
         Retorna la matriz de correlación de columnas numéricas.
 
-        La correlación mide la relación lineal entre dos variables:
-          1.0  → correlación perfecta positiva
-          0.0  → sin correlación lineal
-         -1.0  → correlación perfecta negativa
-
-        df.select_dtypes(include='number') → solo columnas numéricas
-        .corr() → calcula la matriz de correlación de Pearson
         """
         numericas = self.df.select_dtypes(include='number')
         if numericas.empty:

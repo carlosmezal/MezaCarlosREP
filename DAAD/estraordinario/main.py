@@ -1,7 +1,3 @@
-"""
-main.py — Punto de entrada de DataAnalyzer
-Ejecutar: python main.py
-"""
 from gui import MainWindow
 
 if __name__ == "__main__":

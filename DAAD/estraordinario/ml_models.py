@@ -42,12 +42,6 @@ class MLManager:
     """
     Gestiona todas las operaciones de Machine Learning.
 
-    Métodos públicos
-    ----------------
-    train_models()      Entrena uno o más modelos y devuelve reporte detallado.
-    compare_models()    Entrena modelos seleccionados y devuelve tabla de métricas.
-    cluster_and_pca()   K-Means + PCA sobre columnas numéricas.
-    get_target_candidates()  Sugiere columnas candidatas para target.
     """
 
     def __init__(self):
@@ -71,10 +65,6 @@ class MLManager:
         if len(subset) < 10:
             raise ValueError(f"Solo {len(subset)} registros válidos — se necesitan al menos 10.")
 
-        # Si el dataset es muy grande, se toma una muestra para que el
-        # entrenamiento (sobre todo SVM y Random Forest) no tarde
-        # demasiado. 5000 filas son más que suficientes para un
-        # proyecto académico y los resultados siguen siendo representativos.
         MAX_ROWS = 5000
         if len(subset) > MAX_ROWS:
             subset = subset.sample(n=MAX_ROWS, random_state=42)
@@ -102,27 +92,7 @@ class MLManager:
     def train_models(self, df, target_col, model_names, cancel_check=None,
                       progress_callback=None):
         """
-        Entrena los modelos indicados en model_names y devuelve
-        un reporte detallado (classification_report) por cada uno.
-
-        Parámetros
-        ----------
-        df                : DataFrame con los datos
-        target_col        : columna a predecir
-        model_names       : lista de nombres de modelos a entrenar
-                            (deben existir en ALL_MODELS)
-        cancel_check      : callable() → bool  para cancelación entre modelos
-        progress_callback : callable(nombre, i, total) llamado justo antes
-                            de entrenar cada modelo — permite mostrar
-                            progreso en vivo en la interfaz
-
-        Retorna
-        -------
-        resultados : list[dict] con keys:
-                       nombre, accuracy, f1, report, importances (o None)
-        feat_cols  : list[str]
-        classes    : list[str]
-        cancelado  : bool
+        Entrena los modelos
         """
         X_tr, X_te, y_tr, y_te, feat_cols, classes = self._prepare(df, target_col)
         resultados = []
@@ -176,24 +146,7 @@ class MLManager:
                         progress_callback=None):
         """
         Entrena los modelos indicados y devuelve una tabla comparativa
-        con Accuracy y F1 Score ordenada de mayor a menor Accuracy.
-
-        Parámetros
-        ----------
-        df                : DataFrame
-        target_col        : columna target
-        model_names       : lista de nombres de modelos a comparar
-        cancel_check      : callable para cancelación entre modelos
-        progress_callback : callable(nombre, i, total) — progreso en vivo
-
-        Retorna
-        -------
-        df_res     : DataFrame comparativo ordenado por Accuracy
-        feat_cols  : list[str]
-        classes    : list[str]
-        mejor      : nombre del mejor modelo
-        mejor_rep  : classification_report del mejor modelo
-        cancelado  : bool
+     
         """
         X_tr, X_te, y_tr, y_te, feat_cols, classes = self._prepare(df, target_col)
         filas     = []
@@ -245,14 +198,6 @@ class MLManager:
     def cluster_and_pca(self, df, n_clusters=3):
         """
         Aplica K-Means (clustering) + PCA (reducción a 2D).
-        Agrega columnas 'cluster', 'PCA_1', 'PCA_2' al DataFrame.
-
-        Retorna
-        -------
-        df_result    : DataFrame original + nuevas columnas
-        varianza_pct : [% varianza PCA_1, % varianza PCA_2]
-        numeric_cols : columnas usadas
-        inercia      : suma de distancias² a centroides
         """
         num_cols = df.select_dtypes(include="number").columns.tolist()
         if len(num_cols) < 2:

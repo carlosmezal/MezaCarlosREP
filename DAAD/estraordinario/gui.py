@@ -1,5 +1,5 @@
 """
-gui.py — Interfaz gráfica completa de DataAnalyzer
+Interfaz gráfica
 """
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
@@ -12,10 +12,6 @@ from web_scraper     import WebScraper
 from data_analyzer   import DataAnalyzer
 from ml_models       import MLManager, ALL_MODELS
 
-
-# ══════════════════════════════════════════════════════════════════ #
-#  VENTANA PRINCIPAL                                                 #
-# ══════════════════════════════════════════════════════════════════ #
 class MainWindow:
 
     TITLE    = "🔬  DataAnalyzer — Pipeline Multifuente de Datos"
