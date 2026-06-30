@@ -1,0 +1,16 @@
+{
+  "cursos": [
+    {"id": 1, "nombre": "Estructuras de Datos", "carrera": "Ingeniería en Sistemas", "semestre": 3, "creditos": 6, "cupo_max": 35, "inscritos": 32, "modalidad": "Presencial", "profesor_id": 1},
+    {"id": 2, "nombre": "Cálculo Diferencial", "carrera": "Todas", "semestre": 1, "creditos": 5, "cupo_max": 40, "inscritos": 38, "modalidad": "Presencial", "profesor_id": 2},
+    {"id": 3, "nombre": "Seguridad en Redes", "carrera": "Ciberseguridad", "semestre": 5, "creditos": 7, "cupo_max": 30, "inscritos": 28, "modalidad": "Híbrido", "profesor_id": 3},
+    {"id": 4, "nombre": "Machine Learning", "carrera": "Ciencia de Datos", "semestre": 5, "creditos": 8, "cupo_max": 25, "inscritos": 24, "modalidad": "Presencial", "profesor_id": 4},
+    {"id": 5, "nombre": "Programación Orientada a Objetos", "carrera": "Ingeniería en Sistemas", "semestre": 2, "creditos": 6, "cupo_max": 35, "inscritos": 35, "modalidad": "Presencial", "profesor_id": 1},
+    {"id": 6, "nombre": "Álgebra Lineal", "carrera": "Todas", "semestre": 2, "creditos": 5, "cupo_max": 40, "inscritos": 33, "modalidad": "Presencial", "profesor_id": 6},
+    {"id": 7, "nombre": "Criptografía", "carrera": "Ciberseguridad", "semestre": 7, "creditos": 7, "cupo_max": 25, "inscritos": 20, "modalidad": "Presencial", "profesor_id": 7},
+    {"id": 8, "nombre": "Visualización de Datos", "carrera": "Ciencia de Datos", "semestre": 3, "creditos": 6, "cupo_max": 30, "inscritos": 27, "modalidad": "Híbrido", "profesor_id": 8},
+    {"id": 9, "nombre": "Bases de Datos Avanzadas", "carrera": "Ingeniería en Sistemas", "semestre": 5, "creditos": 7, "cupo_max": 30, "inscritos": 29, "modalidad": "Presencial", "profesor_id": 9},
+    {"id": 10, "nombre": "Cómputo de Alto Desempeño", "carrera": "Ingeniería en Sistemas", "semestre": 8, "creditos": 8, "cupo_max": 20, "inscritos": 18, "modalidad": "Presencial", "profesor_id": 1},
+    {"id": 11, "nombre": "Inteligencia Artificial", "carrera": "Ciencia de Datos", "semestre": 7, "creditos": 8, "cupo_max": 25, "inscritos": 25, "modalidad": "Presencial", "profesor_id": 4},
+    {"id": 12, "nombre": "Análisis Forense Digital", "carrera": "Ciberseguridad", "semestre": 7, "creditos": 7, "cupo_max": 20, "inscritos": 15, "modalidad": "Híbrido", "profesor_id": 3}
+  ]
+}

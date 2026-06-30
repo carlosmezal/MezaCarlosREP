@@ -1,0 +1,13 @@
+id	nombre	apellido	departamento	grado	anos_servicio	salario_mensual	correo	activo
+1	Jorge	Mendoza	Sistemas	Doctorado	15	28500.00	j.mendoza@ipn.mx	Sí
+2	Patricia	Villanueva	Matemáticas	Maestría	8	22000.00	p.villanueva@ipn.mx	Sí
+3	Ricardo	Fuentes	Ciberseguridad	Doctorado	20	32000.00	r.fuentes@ipn.mx	Sí
+4	Elena	Castillo	Ciencia de Datos	Maestría	5	21000.00	e.castillo@ipn.mx	Sí
+5	Manuel	Vargas	Sistemas	Licenciatura	3	18000.00	m.vargas@ipn.mx	No
+6	Adriana	Rojas	Matemáticas	Doctorado	12	29000.00	a.rojas@ipn.mx	Sí
+7	Héctor	Guerrero	Ciberseguridad	Maestría	7	23500.00	h.guerrero@ipn.mx	Sí
+8	Laura	Salinas	Ciencia de Datos	Doctorado	18	31000.00	l.salinas@ipn.mx	Sí
+9	Óscar	Medina	Sistemas	Maestría	10	24000.00	o.medina@ipn.mx	Sí
+10	Gabriela	Aguilar	Matemáticas	Doctorado	22	33500.00	g.aguilar@ipn.mx	Sí
+11	Ernesto	Campos	Ciberseguridad	Licenciatura	2	17500.00	e.campos@ipn.mx	No
+12	Mónica	Ramos	Ciencia de Datos	Maestría	6	22500.00	m.ramos@ipn.mx	Sí

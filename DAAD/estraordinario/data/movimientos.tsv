@@ -1,0 +1,52 @@
+id	nombre	tipo	categoria	potencia	precision	pp	descripcion
+1	Pound	Normal	Physical	40	100	35	El objetivo es golpeado con las patas o las alas.
+2	Karate Chop	Fighting	Physical	50	100	25	Golpe de karate con alta probabilidad de golpe crítico.
+4	Comet Punch	Normal	Physical	18	85	15	Golpea al objetivo entre 2 y 5 veces seguidas.
+5	Mega Punch	Normal	Physical	80	85	20	Un puñetazo devastador lanzado con tremenda fuerza.
+6	Pay Day	Normal	Physical	40	100	20	Lanza monedas al objetivo. Las monedas quedan en el campo.
+7	Fire Punch	Fire	Physical	75	100	15	Puñetazo llameante. Puede quemar al objetivo.
+8	Ice Punch	Ice	Physical	75	100	15	Puñetazo helado. Puede congelar al objetivo.
+9	Thunder Punch	Electric	Physical	75	100	15	Puñetazo eléctrico. Puede paralizar al objetivo.
+10	Scratch	Normal	Physical	40	100	35	Ataque con garras afiladas al objetivo.
+11	Vice Grip	Normal	Physical	55	100	30	Aprieta al objetivo con enormes pinzas.
+12	Guillotine	Normal	Physical		30	5	Derrota al objetivo de un solo golpe si impacta.
+13	Razor Wind	Normal	Special	80	100	10	Crea una ráfaga de viento cortante en dos turnos.
+14	Swords Dance	Normal	Status		100	20	Aumenta en 2 etapas el Ataque del usuario.
+15	Cut	Normal	Physical	50	95	30	Corta al objetivo con garras o escamas.
+17	Wing Attack	Flying	Physical	60	100	35	Golpea al objetivo con alas extendidas.
+18	Whirlwind	Normal	Status		100	20	El oponente es reemplazado por otro Pokémon.
+19	Fly	Flying	Physical	90	95	15	Vuela alto en el primer turno y ataca en el segundo.
+20	Bind	Normal	Physical	15	85	20	Estruja al objetivo de 4 a 5 turnos.
+22	Vine Whip	Grass	Physical	45	100	25	Azota al objetivo con látigos de vid.
+23	Stomp	Normal	Physical	65	100	20	Pisotea al objetivo. Puede hacer retroceder.
+24	Double Kick	Fighting	Physical	30	100	30	Golpea al objetivo dos veces seguidas.
+25	Mega Kick	Normal	Physical	120	75	5	Puntapié devastador con enorme fuerza.
+26	Jump Kick	Fighting	Physical	100	95	10	Salta y golpea con la rodilla. Falla si no impacta.
+27	Rolling Kick	Fighting	Physical	60	85	15	Da una patada giratoria al objetivo.
+29	Horn Attack	Normal	Physical	65	100	25	Clava su cuerno en el objetivo.
+30	Fury Attack	Normal	Physical	15	85	20	Perforación múltiple de 2 a 5 veces.
+31	Horn Drill	Normal	Physical		30	5	Taladro de cuerno con derrota instantánea si impacta.
+33	Tackle	Normal	Physical	40	100	35	Embiste al objetivo con el cuerpo.
+34	Body Slam	Normal	Physical	85	100	15	Aplasta al objetivo. Puede paralizar.
+35	Wrap	Normal	Physical	15	90	20	Envuelve y aprieta al objetivo 4 o 5 turnos.
+36	Take Down	Normal	Physical	90	85	20	Embestida violenta que también daña al usuario.
+37	Thrash	Normal	Physical	120	100	10	Ataca sin control durante 2 o 3 turnos.
+38	Double-Edge	Normal	Physical	120	100	15	Ataque kamikaze con rechazo.
+39	Tail Whip	Normal	Status		100	30	Mueve la cola para reducir la Defensa del objetivo.
+40	Poison Sting	Poison	Physical	15	100	35	Aguijón venenoso. Puede envenenar.
+41	Twineedle	Bug	Physical	25	100	20	Pincha dos veces. Puede envenenar.
+44	Bite	Dark	Physical	60	100	25	Muerde con colmillos afilados. Puede hacer retroceder.
+45	Growl	Normal	Status		100	40	Gruñe para reducir el Ataque del objetivo.
+46	Roar	Normal	Status		100	20	El objetivo huye. En batalla, lo reemplaza otro Pokémon.
+47	Sing	Normal	Status		55	15	Melodía que adormece al objetivo.
+48	Supersonic	Normal	Status		55	20	Ondas sónicas que confunden al objetivo.
+50	Disable	Normal	Status		100	20	Inhabilita el último movimiento usado por el objetivo.
+51	Acid	Poison	Special	40	100	30	Rocía ácido que puede reducir la Defensa.
+52	Ember	Fire	Special	40	100	25	Pequeña llama. Puede quemar al objetivo.
+53	Flamethrower	Fire	Special	90	100	15	Llamarada que puede quemar al objetivo.
+54	Mist	Ice	Status		100	30	Rodea al equipo con niebla que evita cambios de stat.
+55	Water Gun	Water	Special	40	100	25	Chorro de agua disparado al objetivo.
+56	Hydro Pump	Water	Special	110	80	5	Dispara un chorro de agua a gran presión.
+57	Surf	Water	Special	90	100	15	Ola enorme que golpea a todos los objetivos.
+58	Ice Beam	Ice	Special	90	100	10	Rayo de hielo. Puede congelar al objetivo.
+59	Blizzard	Ice	Special	110	70	5	Ventisca que puede congelar al objetivo.

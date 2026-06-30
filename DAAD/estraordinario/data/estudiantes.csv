@@ -1,0 +1,16 @@
+id,nombre,apellido,carrera,semestre,promedio,correo,ciudad,edad,beca
+1,Ana,García,Ingeniería en Sistemas,5,9.2,ana.garcia@escom.ipn.mx,CDMX,21,Sí
+2,Carlos,Martínez,Ciencia de Datos,3,8.7,carlos.mtz@escom.ipn.mx,Ecatepec,20,No
+3,Lucía,Hernández,Ingeniería en Sistemas,7,9.8,lucia.hdz@escom.ipn.mx,CDMX,23,Sí
+4,Miguel,López,Ciberseguridad,1,7.5,miguel.lop@escom.ipn.mx,Naucalpan,19,No
+5,Sofía,Ramírez,Ciencia de Datos,5,9.1,sofia.ram@escom.ipn.mx,Tlalnepantla,22,Sí
+6,Diego,Torres,Ingeniería en Sistemas,3,8.3,diego.tor@escom.ipn.mx,CDMX,20,No
+7,Valentina,Flores,Ciberseguridad,7,9.5,vale.flo@escom.ipn.mx,Iztapalapa,23,Sí
+8,Andrés,Ruiz,Ciencia de Datos,1,7.9,andres.rui@escom.ipn.mx,CDMX,19,No
+9,Camila,Morales,Ingeniería en Sistemas,5,8.6,camila.mor@escom.ipn.mx,Gustavo A. Madero,21,No
+10,Luis,Jiménez,Ciberseguridad,3,9.0,luis.jim@escom.ipn.mx,Azcapotzalco,20,Sí
+11,Mariana,Díaz,Ciencia de Datos,7,9.4,mariana.diaz@escom.ipn.mx,CDMX,23,Sí
+12,Roberto,Pérez,Ingeniería en Sistemas,1,6.8,roberto.per@escom.ipn.mx,Nezahualcóyotl,19,No
+13,Isabella,Sánchez,Ciberseguridad,5,8.9,isa.san@escom.ipn.mx,CDMX,22,No
+14,Fernando,Castro,Ciencia de Datos,3,7.2,fer.cas@escom.ipn.mx,Tlalpan,20,No
+15,Daniela,Reyes,Ingeniería en Sistemas,7,9.7,dani.rey@escom.ipn.mx,Coyoacán,24,Sí

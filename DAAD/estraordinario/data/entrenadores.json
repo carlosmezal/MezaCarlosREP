@@ -1,0 +1,24 @@
+{
+  "entrenadores": [
+    {"id": 1, "nombre": "Ash",      "region": "Kanto",  "medallas": 8, "pokemon_equipo": ["Pikachu","Charizard","Bulbasaur","Squirtle","Snorlax","Lapras"],  "victorias": 142, "derrotas": 31, "rango": "Campeón Regional"},
+    {"id": 2, "nombre": "Misty",    "region": "Kanto",  "medallas": 8, "pokemon_equipo": ["Starmie","Psyduck","Togepi","Gyarados","Corsola","Politoed"],     "victorias": 98,  "derrotas": 22, "rango": "Líder de Gimnasio"},
+    {"id": 3, "nombre": "Brock",    "region": "Kanto",  "medallas": 8, "pokemon_equipo": ["Geodude","Onix","Vulpix","Zubat","Crobat","Marshtomp"],           "victorias": 87,  "derrotas": 18, "rango": "Líder de Gimnasio"},
+    {"id": 4, "nombre": "Gary",     "region": "Kanto",  "medallas": 10,"pokemon_equipo": ["Blastoise","Arcanine","Nidoking","Scizor","Umbreon","Electivire"],"victorias": 165, "derrotas": 28, "rango": "Maestro Pokémon"},
+    {"id": 5, "nombre": "Jesse",    "region": "Kanto",  "medallas": 0, "pokemon_equipo": ["Arbok","Wobbuffet","Seviper","Yanmega","Dustox","Lickitung"],     "victorias": 12,  "derrotas": 89, "rango": "Equipo Rocket"},
+    {"id": 6, "nombre": "James",    "region": "Kanto",  "medallas": 0, "pokemon_equipo": ["Weezing","Victreebel","Cacnea","Carnivine","Mime Jr.","Chimecho"],"victorias": 10,  "derrotas": 91, "rango": "Equipo Rocket"},
+    {"id": 7, "nombre": "Tracey",   "region": "Naranja","medallas": 3, "pokemon_equipo": ["Scyther","Venonat","Marill","Ditto","Porygon","Electrode"],       "victorias": 55,  "derrotas": 14, "rango": "Observador Pokémon"},
+    {"id": 8, "nombre": "May",      "region": "Hoenn",  "medallas": 5, "pokemon_equipo": ["Blaziken","Beautifly","Skitty","Bulbasaur","Munchlax","Glaceon"], "victorias": 78,  "derrotas": 19, "rango": "Coordinadora"},
+    {"id": 9, "nombre": "Max",      "region": "Hoenn",  "medallas": 0, "pokemon_equipo": [],                                                                  "victorias": 0,   "derrotas": 0,  "rango": "Sin licencia"},
+    {"id": 10,"nombre": "Dawn",     "region": "Sinnoh", "medallas": 5, "pokemon_equipo": ["Piplup","Buneary","Pachirisu","Mamoswine","Cyndaquil","Togekiss"], "victorias": 91,  "derrotas": 21, "rango": "Coordinadora"},
+    {"id": 11,"nombre": "Cilan",    "region": "Teselia","medallas": 8, "pokemon_equipo": ["Pansage","Crustle","Stunfisk","Pansear","Panpour","Ferrothorn"],   "victorias": 73,  "derrotas": 17, "rango": "Catador A"},
+    {"id": 12,"nombre": "Iris",     "region": "Teselia","medallas": 6, "pokemon_equipo": ["Axew","Emolga","Dragonite","Excadrill","Gible","Aggron"],          "victorias": 82,  "derrotas": 20, "rango": "Campeón de Alto Mando"},
+    {"id": 13,"nombre": "Clemont",  "region": "Kalos",  "medallas": 8, "pokemon_equipo": ["Bunnelby","Dedenne","Luxray","Heliolisk","Chespin","Magneton"],    "victorias": 66,  "derrotas": 15, "rango": "Líder de Gimnasio"},
+    {"id": 14,"nombre": "Bonnie",   "region": "Kalos",  "medallas": 0, "pokemon_equipo": ["Dedenne"],                                                         "victorias": 3,   "derrotas": 5,  "rango": "Sin licencia"},
+    {"id": 15,"nombre": "Serena",   "region": "Kalos",  "medallas": 3, "pokemon_equipo": ["Braixen","Sylveon","Pancham","Eevee","Fennekin","Pancham"],        "victorias": 58,  "derrotas": 16, "rango": "Coordinadora"},
+    {"id": 16,"nombre": "Lana",     "region": "Alola",  "medallas": 4, "pokemon_equipo": ["Popplio","Primarina","Wishiwashi","Araquanid","Lapras","Dewpider"],"victorias": 49,  "derrotas": 11, "rango": "Capitana Isla"},
+    {"id": 17,"nombre": "Kiawe",    "region": "Alola",  "medallas": 4, "pokemon_equipo": ["Turtonator","Alolan Marowak","Charizard","Incineroar","Tauros","Marowak"],"victorias":61,"derrotas":13,"rango": "Capitán Isla"},
+    {"id": 18,"nombre": "Lillie",   "region": "Alola",  "medallas": 2, "pokemon_equipo": ["Alolan Vulpix","Snowy","Clefairy","Comfey","Ribombee","Magearna"],"victorias": 34, "derrotas": 12, "rango": "Investigadora"},
+    {"id": 19,"nombre": "Sophocles","region": "Alola",  "medallas": 4, "pokemon_equipo": ["Togedemaru","Charjabug","Vikavolt","Alolan Golem","Metang","Magnezone"],"victorias":40,"derrotas":10,"rango":"Capitán Isla"},
+    {"id": 20,"nombre": "Goh",      "region": "Kanto",  "medallas": 0, "pokemon_equipo": ["Cinderace","Inteleon","Pinsir","Grookey","Flygon","Suicune"],      "victorias": 55,  "derrotas": 20, "rango": "Investigador Pokémon"}
+  ]
+}
