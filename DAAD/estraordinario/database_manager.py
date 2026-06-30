@@ -106,7 +106,7 @@ class DatabaseManager:
 
     def get_tables(self) -> list:
         """
-        Retorna los nombres de todas las tablas públicas en la BD.
+        Retorna los nombres de las tablas públicas en la BD.
 
         """
         df = self.execute_query(query)
